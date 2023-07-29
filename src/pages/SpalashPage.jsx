@@ -14,7 +14,13 @@ const SpalashPage = () => {
                             Welcome from the KMA Group of Companies! Please
                             Login here
                         </Typography>
-                        <Box className={`lognFormBox`}>Login box</Box>
+                        <Box className={`lognFormBox`}>
+                            <Box>
+                                <Box>Box title</Box>
+                                <Box>KMA logo</Box>
+                            </Box>
+                            <Box>form input</Box>
+                        </Box>
                     </Box>
                 </Grid>
             </Grid>
