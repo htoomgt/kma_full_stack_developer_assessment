@@ -5,34 +5,46 @@
     background-color: #003456;
     height: 98vh;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-    margin-left: 32px;
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .orgTitle {
-    width: 78%;
     font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 600;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 96px;
     display: flex;
     align-items: center;
-    min-height: 1px;
+    width: 70%;
+    /* border: 1px solid #000; */
+    height: 30%;
+    padding-top: 10%;
+    padding-left: 32px;
+}
+
+.discriptionBlock {
+    /* border: 2px solid #000; */
+    width: 78%;
+    height: 20%;
+    padding-left: 32px;
 }
 
 .orgDescription {
-    width: 78%;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 400;
     color: #fff;
-    line-height: 21px;
+    line-height: 28px;
     min-height: 1px;
+}
+
+.bgClipArt {
+    width: 60%;
+    height: auto;
+    float: right;
+    margin-right: 10%;
+    margin-top: 24px;
 }
