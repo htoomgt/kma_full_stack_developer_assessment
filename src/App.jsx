@@ -4,8 +4,6 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-    document.title = "Home";
-
     return (
         <>
             <BrowserRouter>

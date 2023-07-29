@@ -1,0 +1,38 @@
+.gridMainConatiner {
+    padding: 16px;
+}
+.greetingCard {
+    background-color: #003456;
+    height: 98vh;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    margin-left: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.orgTitle {
+    width: 78%;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    min-height: 1px;
+}
+
+.orgDescription {
+    width: 78%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 21px;
+    min-height: 1px;
+}
