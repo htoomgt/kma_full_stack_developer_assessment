@@ -42,7 +42,7 @@
 }
 
 .bgClipArt {
-    width: 70%;
+    max-width: 70%;
     height: auto;
     float: right;
     margin-right: 15%;
