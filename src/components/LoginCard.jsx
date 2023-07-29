@@ -14,7 +14,9 @@ const LoginCard = () => {
                     <Box className={`loginFormBox`}>
                         <Box className={`loginTitleLogoBox`}>
                             <Box xs={6} className={`portalLoginBox`}>
-                                Portal Login
+                                <Typography variant="p">
+                                    Portal Login
+                                </Typography>
                             </Box>
                             <Box xs={6} className={`kmaLogoBox`}>
                                 <img src={KMALogo} alt="kma logo" />
