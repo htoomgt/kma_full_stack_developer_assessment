@@ -1,0 +1,83 @@
+/** Login Card start*/
+.loginGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginDisplayBox {
+    width: 80%;
+    height: 75%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginFormTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 50px;
+    width: 96%;
+    /* border: 1px solid #000; */
+    color: #000;
+    text-align: center;
+}
+
+.loginFormBox {
+    border: 1px solid #565555;
+    width: 80%;
+    height: 50%;
+    padding: 48px;
+}
+
+.loginTitleLogoBox {
+    display: flex;
+    height: 25%;
+    /* border: 1px solid #000; */
+}
+.portalLoginBox {
+    display: flex;
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    /* border: 1px solid #000; */
+    align-items: center;
+}
+
+.kmaLogoBox {
+    width: 50%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.kmaLogoBox img {
+    width: 30%;
+}
+
+.loginFormGroupBox {
+    margin-top: 0px;
+    height: 70%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.loginFormGroupBox input {
+    border: 1px solid #565555;
+}
+
+.loginFormGroupBox button {
+    width: 20%;
+}
+
+/** Login Card end*/

@@ -1,5 +1,6 @@
 import { Grid, Typography, Box, TextField, Button } from "@mui/material";
 import KMALogo from "../assets/kma_logo.png";
+import "./LoginCard.css";
 
 const LoginCard = () => {
     return (

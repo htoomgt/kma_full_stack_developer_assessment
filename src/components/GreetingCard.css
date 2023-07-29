@@ -1,0 +1,49 @@
+/**Greeting card start */
+.greetingCard {
+    background-color: #003456;
+    height: 98vh;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    border-radius: 16px;
+}
+
+.orgTitle {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    /* border: 1px solid #000; */
+    height: 30%;
+    padding-top: 10%;
+    padding-left: 32px;
+}
+
+.discriptionBlock {
+    /* border: 2px solid #000; */
+    width: 78%;
+    height: 20%;
+    padding-left: 32px;
+}
+
+.orgDescription {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+    min-height: 1px;
+}
+
+.bgClipArt {
+    max-width: 70%;
+    height: auto;
+    float: right;
+    margin-right: 15%;
+    margin-top: -40px;
+}
+/**Greeting card end */
