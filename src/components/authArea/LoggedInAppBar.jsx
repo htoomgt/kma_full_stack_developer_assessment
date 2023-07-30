@@ -17,7 +17,7 @@ import Logout from "./Logout";
 import kmaLogo from "../../assets/kma_logo.png";
 import { NavLink } from "react-router-dom";
 
-const pages = ["home", "announcement", "news"];
+const pages = ["home", "tasks", "announcement", "news"];
 const settings = ["profile", "logout"];
 const avatarImgUrl =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQht5VSVQFL1pm0nJZP-_B0jdGsGinEx5yvrbolCxSjhO4_ykjrXm6cCPTv1bpfJ0vF5Zw&usqp=CAU";

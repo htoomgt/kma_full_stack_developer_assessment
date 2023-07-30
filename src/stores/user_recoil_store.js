@@ -5,6 +5,7 @@ const registeredUserInitialState = {
     default: {
         email: "",
         password: "",
+        fullname: "",
     },
 };
 
@@ -16,6 +17,7 @@ const loggedInUserInitialState = {
         email: "",
         password: "",
         status: false,
+        fullname: "",
     },
 };
 

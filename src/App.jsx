@@ -9,12 +9,14 @@ import { useEffect, useMemo } from "react";
 function App() {
     const registeredEmail = import.meta.env.VITE_REGISTERED_EMAL;
     const registeredPassword = import.meta.env.VITE_REGISTERED_PASSWORD;
+    const registeredFullname = import.meta.env.VITE_REGISTERED_FULLNAME;
     const registeredUser = useMemo(
         () => ({
             email: registeredEmail,
             password: registeredPassword,
+            fullname: registeredFullname,
         }),
-        [registeredEmail, registeredPassword]
+        [registeredEmail, registeredPassword, registeredFullname]
     );
     const setRegisteredUser = useSetRecoilState(registeredUserState);
 

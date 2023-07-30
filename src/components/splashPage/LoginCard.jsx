@@ -52,6 +52,7 @@ const LoginCard = () => {
                     email: loginCredentials.email,
                     password: loginCredentials.password,
                     status: true,
+                    fullname: registeredUser.fullname,
                 };
             });
             navigate("/home");

@@ -3,7 +3,12 @@ import { loggedInUserState } from "../stores/user_recoil_store";
 import { useNavigate } from "react-router-dom";
 import useLoggedInCheckAuthArea from "../customHooks/useLoggedInCheckAuthArea";
 import LoggedInAppBar from "../components/authArea/LoggedInAppBar";
-import { Typography } from "@mui/material";
+import { Grid, Typography, Container } from "@mui/material";
+import Footer from "../components/authArea/Footer";
+import Annoucement from "../components/homePage/Annoucement";
+import TodoGrid from "../components/homePage/TodoGrid";
+import NewsSection from "../components/homePage/NewsSection";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const HomePage = () => {
     document.title = "KMA - Home Page";
@@ -17,14 +22,46 @@ const HomePage = () => {
     return (
         <>
             <LoggedInAppBar />
-            <h1>HomePage</h1>
-            <h2>Welcome {loggedInUser.email}</h2>
-            <Typography sx={{ color: "blue" }}>sample text</Typography>
+            <Container maxWidth="lg">
+                <Grid container spacing={0}>
+                    <Grid item xs={12} sm={8} sx={{ backgroundColor: "cyan" }}>
+                        greeting
+                        <h1>HomePage</h1>
+                        <Typography variant="h4">
+                            Welcome {loggedInUser.fullname}
+                        </Typography>
+                        {/* for testing purposes */}
+                        <p>
+                            <button onClick={() => navigate("/")}>
+                                splash screen
+                            </button>{" "}
+                        </p>
+                        <AnchorLink href="#todos"> Todos </AnchorLink>&nbsp;
+                        <AnchorLink href="#news"> News </AnchorLink>&nbsp;
+                        <AnchorLink href="#annoucement">Annoucement</AnchorLink>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={4}
+                        sx={{ backgroundColor: "orange" }}
+                    >
+                        status
+                    </Grid>
+                </Grid>
 
-            {/* for testing purposes */}
-            <p>
-                <button onClick={() => navigate("/")}>splash screen</button>{" "}
-            </p>
+                {/* announcement */}
+                <Annoucement id="annoucement" />
+
+                {/* news */}
+                <NewsSection id="news" />
+
+                {/* todo  */}
+                <TodoGrid id="todos" />
+            </Container>
+
+            {/* footer */}
+            <Footer />
         </>
     );
 };
