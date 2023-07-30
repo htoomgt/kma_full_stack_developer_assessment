@@ -1,5 +1,5 @@
 import { Grid, Typography, Box } from "@mui/material";
-import bgClipArt from "../assets/bg_clip_art.png";
+import bgClipArt from "../../assets/bg_clip_art.png";
 import "./GreetingCard.css";
 
 const GreetingCard = () => {

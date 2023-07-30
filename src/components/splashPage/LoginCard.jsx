@@ -1,11 +1,11 @@
 import { Grid, Typography, Box, TextField, Button } from "@mui/material";
-import KMALogo from "../assets/kma_logo.png";
+import KMALogo from "../../assets/kma_logo.png";
 import "./LoginCard.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import { registeredUserState } from "../stores/user_recoil_store";
-import { loggedInUserState } from "../stores/user_recoil_store";
+import { registeredUserState } from "../../stores/user_recoil_store";
+import { loggedInUserState } from "../../stores/user_recoil_store";
 
 const formInitialState = {
     email: "",
@@ -87,6 +87,7 @@ const LoginCard = () => {
                                 name="email"
                                 onChange={handleTextInput}
                                 style={styles.field}
+                                type="email"
                             />
                             <TextField
                                 id="password"

@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import "./SpalashPage.css";
-import GreetingCard from "../components/GreetingCard";
-import LoginCard from "../components/LoginCard";
+import GreetingCard from "../components/splashPage/GreetingCard";
+import LoginCard from "../components/splashPage/LoginCard";
 import useLoggedInCheckNonAuthArea from "../customHooks/useLoggedInCheckNonAuthArea";
 
 const SpalashPage = () => {
