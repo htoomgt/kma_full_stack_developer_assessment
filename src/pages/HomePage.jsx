@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { loggedInUserState } from "../stores/user_recoil_store";
 import { useNavigate } from "react-router-dom";
+import useLoggedInCheckAuthArea from "../customHooks/useLoggedInCheckAuthArea";
 
 const HomePage = () => {
     document.title = "KMA - Home Page";
@@ -10,11 +10,8 @@ const HomePage = () => {
     const loggedInUser = useRecoilValue(loggedInUserState);
     const setLoggedInUser = useSetRecoilState(loggedInUserState);
 
-    useEffect(() => {
-        if (loggedInUser.status === false) {
-            navigate("/");
-        }
-    }, [loggedInUser, navigate]);
+    // Logged In Check and redirect if not authenticated
+    useLoggedInCheckAuthArea();
 
     const handleLogout = () => {
         setLoggedInUser((prevState) => {
@@ -29,6 +26,11 @@ const HomePage = () => {
             <h2>Welcome {loggedInUser.email}</h2>
             <p>
                 <button onClick={handleLogout}>Logout</button>
+            </p>
+
+            {/* for testing purposes */}
+            <p>
+                <button onClick={() => navigate("/")}>splash screen</button>{" "}
             </p>
         </>
     );
