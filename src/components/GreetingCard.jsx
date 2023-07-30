@@ -26,4 +26,6 @@ const GreetingCard = () => {
     );
 };
 
+GreetingCard.propTypes = {};
+
 export default GreetingCard;

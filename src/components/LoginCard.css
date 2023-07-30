@@ -72,9 +72,9 @@
     justify-content: space-evenly;
 }
 
-.loginFormGroupBox input {
+/* .loginFormGroupBox input {
     border: 1px solid #565555;
-}
+} */
 
 .loginFormGroupBox button {
     width: 20%;
