@@ -15,9 +15,9 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logout from "./Logout";
 import kmaLogo from "../../assets/kma_logo.png";
-import { NavLink } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const pages = ["home", "tasks", "announcement", "news"];
+const pages = ["tasks", "annoucement", "news"];
 const settings = ["profile", "logout"];
 const avatarImgUrl =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQht5VSVQFL1pm0nJZP-_B0jdGsGinEx5yvrbolCxSjhO4_ykjrXm6cCPTv1bpfJ0vF5Zw&usqp=CAU";
@@ -90,8 +90,8 @@ const LoggedInAppBar = () => {
                                     key={page}
                                     onClick={handleCloseNavMenu}
                                 >
-                                    <NavLink
-                                        to={"/" + page}
+                                    <AnchorLink
+                                        href={`#` + page}
                                         style={{ textDecoration: "none" }}
                                     >
                                         <Typography
@@ -106,7 +106,7 @@ const LoggedInAppBar = () => {
                                         >
                                             {page}
                                         </Typography>
-                                    </NavLink>
+                                    </AnchorLink>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -128,8 +128,8 @@ const LoggedInAppBar = () => {
                                     display: "block",
                                 }}
                             >
-                                <NavLink
-                                    to={"/" + page}
+                                <AnchorLink
+                                    href={`#` + page}
                                     style={{ textDecoration: "none" }}
                                 >
                                     <Typography
@@ -143,7 +143,7 @@ const LoggedInAppBar = () => {
                                     >
                                         {page}
                                     </Typography>
-                                </NavLink>
+                                </AnchorLink>
                             </Button>
                         ))}
                     </Box>

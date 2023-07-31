@@ -36,7 +36,7 @@ const HomePage = () => {
                                 splash screen
                             </button>{" "}
                         </p>
-                        <AnchorLink href="#todos"> Todos </AnchorLink>&nbsp;
+                        <AnchorLink href="#tasks"> Todos </AnchorLink>&nbsp;
                         <AnchorLink href="#news"> News </AnchorLink>&nbsp;
                         <AnchorLink href="#annoucement">Annoucement</AnchorLink>
                     </Grid>
@@ -57,7 +57,7 @@ const HomePage = () => {
                 <NewsSection id="news" />
 
                 {/* todo  */}
-                <TodoGrid id="todos" />
+                <TodoGrid id="tasks" />
             </Container>
 
             {/* footer */}
