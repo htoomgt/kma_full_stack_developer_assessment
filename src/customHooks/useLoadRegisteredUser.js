@@ -1,5 +1,5 @@
 import { registeredUserState } from "../stores/user_recoil_store";
-import { useSetRecoilState } from "recoil";
+import { useSetRecoilState, useRecoilValue } from "recoil";
 import { useEffect, useMemo } from "react";
 
 const useLoadRegisteredUser = () => {
@@ -15,10 +15,13 @@ const useLoadRegisteredUser = () => {
         [registeredEmail, registeredPassword, registeredFullname]
     );
     const setRegisteredUser = useSetRecoilState(registeredUserState);
+    const registeredUserRecoil = useRecoilValue(registeredUserState);
 
     useEffect(() => {
-        setRegisteredUser(registeredUser);
-    }, [setRegisteredUser, registeredUser]);
+        if (registeredUserRecoil.email === "") {
+            setRegisteredUser(registeredUser);
+        }
+    }, [setRegisteredUser, registeredUser, registeredUserRecoil.email]);
 };
 
 export default useLoadRegisteredUser;

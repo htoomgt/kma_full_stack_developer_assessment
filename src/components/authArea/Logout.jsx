@@ -9,7 +9,13 @@ const Logout = () => {
 
     const handleLogout = () => {
         setLoggedInUser((prevState) => {
-            return { ...prevState, status: false, email: "", password: "" };
+            return {
+                ...prevState,
+                status: false,
+                email: "",
+                password: "",
+                fullname: "",
+            };
         });
         navigate("/");
     };

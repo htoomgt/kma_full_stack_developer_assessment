@@ -9,6 +9,7 @@ import Annoucement from "../components/homePage/Annoucement";
 import TodoGrid from "../components/homePage/TodoGrid";
 import NewsSection from "../components/homePage/NewsSection";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import useSetCurrentPage from "../customHooks/useSetCurrentPage";
 
 const HomePage = () => {
     document.title = "KMA - Home Page";
@@ -18,6 +19,8 @@ const HomePage = () => {
 
     // Logged In Check and redirect if not authenticated
     useLoggedInCheckAuthArea();
+
+    useSetCurrentPage("/home");
 
     return (
         <>
