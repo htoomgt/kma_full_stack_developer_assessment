@@ -3,7 +3,6 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import kmaLogo from "../../assets/kma_logo.png";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Footer() {
     const content = {
