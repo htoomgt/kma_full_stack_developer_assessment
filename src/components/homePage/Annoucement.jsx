@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import announcement_left from "../../assets/announcement_left.png";
 
