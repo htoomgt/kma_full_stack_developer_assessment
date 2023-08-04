@@ -1,6 +1,5 @@
 import { useRecoilValue } from "recoil";
 import { loggedInUserState } from "../stores/user_recoil_store";
-import { useNavigate } from "react-router-dom";
 import useLoggedInCheckAuthArea from "../customHooks/useLoggedInCheckAuthArea";
 import LoggedInAppBar from "../components/authArea/LoggedInAppBar";
 import { Grid, Typography, Container } from "@mui/material";
@@ -8,14 +7,12 @@ import Footer from "../components/authArea/Footer";
 import Annoucement from "../components/homePage/Annoucement";
 import TodoGrid from "../components/homePage/TodoGrid";
 import NewsSection from "../components/homePage/NewsSection";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import useSetCurrentPage from "../customHooks/useSetCurrentPage";
 import bannerLeftBackground from "../assets/banner_left_background.jpg";
 import bannerRightBackground from "../assets/banner_right_background.png";
 
 const HomePage = () => {
     document.title = "KMA - Home Page";
-    let navigate = useNavigate();
 
     const loggedInUser = useRecoilValue(loggedInUserState);
 

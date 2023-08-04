@@ -50,7 +50,6 @@ const LoggedInAppBar = () => {
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <img src={kmaLogo} alt="avatar" style={{ width: "5%" }} />
-
                     <Box
                         sx={{
                             flexGrow: 1,
