@@ -47,7 +47,7 @@ const LoggedInAppBar = () => {
             sx={{ backgroundColor: "white" }}
             elevation={0}
         >
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     <img src={kmaLogo} alt="avatar" style={{ width: "5%" }} />
 

@@ -10,6 +10,8 @@ import TodoGrid from "../components/homePage/TodoGrid";
 import NewsSection from "../components/homePage/NewsSection";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useSetCurrentPage from "../customHooks/useSetCurrentPage";
+import bannerLeftBackground from "../assets/banner_left_background.jpg";
+import bannerRightBackground from "../assets/banner_right_background.png";
 
 const HomePage = () => {
     document.title = "KMA - Home Page";
@@ -25,34 +27,42 @@ const HomePage = () => {
     return (
         <>
             <LoggedInAppBar />
-            <Container maxWidth="lg">
-                <Grid container spacing={0}>
-                    <Grid item xs={12} sm={8} sx={{ backgroundColor: "cyan" }}>
-                        greeting
-                        <h1>HomePage</h1>
-                        <Typography variant="h4">
-                            Welcome {loggedInUser.fullname}
-                        </Typography>
-                        {/* for testing purposes */}
-                        <p>
-                            <button onClick={() => navigate("/")}>
-                                splash screen
-                            </button>{" "}
-                        </p>
-                        <AnchorLink href="#tasks"> Todos </AnchorLink>&nbsp;
-                        <AnchorLink href="#news"> News </AnchorLink>&nbsp;
-                        <AnchorLink href="#annoucement">Annoucement</AnchorLink>
+            <Container maxWidth="xl">
+                <Grid container spacing={0} sx={{ padding: "0" }}>
+                    <Grid item xs={12} sm={8} sx={{ backgroundColor: "black" }}>
+                        <img src={bannerLeftBackground} />
                     </Grid>
                     <Grid
                         item
                         xs={12}
                         sm={4}
-                        sx={{ backgroundColor: "orange" }}
+                        sx={{
+                            backgroundColor: "black",
+                            overflow: "hidden",
+                        }}
                     >
-                        status
+                        <img
+                            src={bannerRightBackground}
+                            style={{ objectFit: "contain" }}
+                        />
+                        <Typography
+                            variant="h4"
+                            sx={{
+                                color: "white",
+                                position: "absolute",
+                                top: "18%",
+                                left: "10%",
+                                width: "80%",
+                            }}
+                        >
+                            Hello, Good Morning {loggedInUser.fullname} ! <br />
+                            Here is what you have missed <br />
+                            when you are away
+                        </Typography>
                     </Grid>
                 </Grid>
-
+            </Container>
+            <Container maxWidth="lg">
                 {/* announcement */}
                 <Annoucement id="annoucement" />
 
